@@ -1,5 +1,5 @@
 #!/bin/bash
-apiKey='2bd32d99c4cd58ac9dd3e047759c6b8f'
+apiKey='xxxxxxxxx'
 defaultLocation="Anaheim"
 dynamicUpdates=0
 degreeCharacter="c"

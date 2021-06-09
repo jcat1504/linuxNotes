@@ -4,6 +4,8 @@
   -  When you write a script, you have the option to specify which shell environment can be used
   - #!/bin/bash is you telling your system to use default shell. Bash is the command interpreter.
 
+https://stackoverflow.com/questions/5725296/difference-between-sh-and-bash#:~:text=Bash%20(Bourne%20again%20shell)%20is,replacement%20for%20the%20Bourne%20shell.&text=Bash%20supports%20sh.,actually%20a%20POSIX%20compliant%20shell
+
 
 
 2) **Learn about what a shell is, and in your own words, describe it pretty briefly. The 'bash' and 'sh' shell are not the same thing. Look into why and why not. **
@@ -41,7 +43,7 @@
 [https://stackoverflow.com/questions/5725296/difference-between-sh-and-bash#:~:text=Bash%20(Bourne%20again%20shell)%20is,replacement%20for%20the%20Bourne%20shell.&text=Bash%20supports%20sh.,actually%20a%20POSIX%20compliant%20shell](https://stackoverflow.com/questions/5725296/difference-between-sh-and-bash#:~:text=Bash (Bourne again shell) is,replacement for the Bourne shell.&text=Bash supports sh.,actually a POSIX compliant shell).
 
 
-
+https://unix.stackexchange.com/questions/306111/what-is-the-difference-between-the-bash-operators-vs-vs-vs
 
 
 

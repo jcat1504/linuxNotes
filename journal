@@ -10,4 +10,12 @@ Finished simple Jest tutorial. Learning more about that and reading documentatio
 6.7.2021
 Pushed through my first PR - finished up the documentation in setting up testing with mocha
 
+6.8.2021
+Finished up a ticket that touched on the topic of shell scripts
+
+6.9.2021
+Had trouble on Git where it didn't recognize the branch I was working on and my file wasn't showing in the repo. Realized I was working with two different commit histories.
+Solved it with this answer:
+https://stackoverflow.com/questions/4089430/how-can-i-determine-the-url-that-a-local-git-repository-was-originally-cloned-fr
+
 https://levelup.gitconnected.com/react-cheatsheet-this-setstate-8bc12c5f40f5

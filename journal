@@ -18,6 +18,10 @@ Had trouble on Git where it didn't recognize the branch I was working on and my 
 Solved it with this answer:
 https://stackoverflow.com/questions/4089430/how-can-i-determine-the-url-that-a-local-git-repository-was-originally-cloned-fr
 
-https://www.twilio.com/docs/sms/tutorials/how-to-send-sms-messages-node-js
+6.14.2021
+Had a pretty busy day running errands all day, along with packing but got some research done: 
+So working on another ticket...trying to set up a node js environment where Twilio will be able to send sms feature through node instead of bash, that way I can test with mocha
+https://www.twilio.com/blog/how-to-send-sms-node-js
+^^this could be the answer
 
 https://levelup.gitconnected.com/react-cheatsheet-this-setstate-8bc12c5f40f5

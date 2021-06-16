@@ -1,30 +1,30 @@
-5.5.2021
+### 5.5.2021
 Finally able to authenticate keys correctly and send text msg to my phone number
 
-5.11
+### 5.11
 Prepping up application for Corey, making sure to take notes and explain the technical side of whats happening under the hood.
 
-6.2.21
+### 6.2.21
 Finished simple Jest tutorial. Learning more about that and reading documentation
 
-6.7.2021
+### 6.7.2021
 Pushed through my first PR - finished up the documentation in setting up testing with mocha
 
-6.8.2021
+### 6.8.2021
 Finished up a ticket that touched on the topic of shell scripts
 
-6.9.2021
+### 6.9.2021
 Had trouble on Git where it didn't recognize the branch I was working on and my file wasn't showing in the repo. Realized I was working with two different commit histories.
 Solved it with this answer:
 https://stackoverflow.com/questions/4089430/how-can-i-determine-the-url-that-a-local-git-repository-was-originally-cloned-fr
 
-6.14.2021
+### 6.14.2021
 Had a pretty busy day running errands all day, along with packing but got some research done: 
 So working on another ticket...trying to set up a node js environment where Twilio will be able to send sms feature through node instead of bash, that way I can test with mocha
 https://www.twilio.com/blog/how-to-send-sms-node-js
 ^^this could be the answer
 
-6.15.2021
+### 6.15.2021
 - I think I somehow accomplished the ticket successfully which was to implement Twilio text feature through node.js.
 - Though at first, I wrote out a different file in node, which was implemented successfully...I just couldn't figure out how to run a shell script inside the node env
 - I was thinking out loud and figuring out if it is remotely possible to call the function in my node file and execute it that way? 
@@ -33,5 +33,16 @@ But that would be like mixing two different things together - a bash function an
 - Instead, I installed the shelljs module in my node environment, and called the shell script that way. it is just two lines and it worked out fine. I get text messages and 
 script runs well. there is more to do, however
 
+**calling shell files in node:**
+https://stackoverflow.com/questions/44647778/how-to-run-shell-script-file-using-nodejs
 
-https://levelup.gitconnected.com/react-cheatsheet-this-setstate-8bc12c5f40f5
+**shelljs module:**
+https://www.npmjs.com/package/shelljs
+
+**child process? :**
+https://stackoverflow.com/questions/19103735/run-shell-script-with-node-js-childprocess
+
+**code for twilio messaging through node env:**
+https://www.twilio.com/blog/how-to-send-sms-node-js
+
+

@@ -24,4 +24,14 @@ So working on another ticket...trying to set up a node js environment where Twil
 https://www.twilio.com/blog/how-to-send-sms-node-js
 ^^this could be the answer
 
+6.15.2021
+- I think I somehow accomplished the ticket successfully which was to implement Twilio text feature through node.js.
+- Though at first, I wrote out a different file in node, which was implemented successfully...I just couldn't figure out how to run a shell script inside the node env
+- I was thinking out loud and figuring out if it is remotely possible to call the function in my node file and execute it that way? 
+Just the callWeather function and placed in a JS function to run in my node file..is that what we are looking to do?
+But that would be like mixing two different things together - a bash function and javascript file, so that is extra work?
+- Instead, I installed the shelljs module in my node environment, and called the shell script that way. it is just two lines and it worked out fine. I get text messages and 
+script runs well. there is more to do, however
+
+
 https://levelup.gitconnected.com/react-cheatsheet-this-setstate-8bc12c5f40f5

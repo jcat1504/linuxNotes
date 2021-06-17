@@ -45,4 +45,8 @@ https://stackoverflow.com/questions/19103735/run-shell-script-with-node-js-child
 **code for twilio messaging through node env:**
 https://www.twilio.com/blog/how-to-send-sms-node-js
 
+### 6.16.2021
+- Finished last ticket which was to run my live weather script on shell script validator. Fixed up the errors, which were small and simple
+https://www.shellcheck.net/
+
 

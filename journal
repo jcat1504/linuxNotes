@@ -49,4 +49,8 @@ https://www.twilio.com/blog/how-to-send-sms-node-js
 - Finished last ticket which was to run my live weather script on shell script validator. Fixed up the errors, which were small and simple
 https://www.shellcheck.net/
 
+### 6.17.2021
+-Something happened when I was editing my script in the validator that threw everything off. for some reason, the script ran but wasn't showing all of the weather forecast. and couldn't even detect my city
+-so I created a diff file pretty much like the original one, and it worked just fine
+
 

@@ -53,4 +53,10 @@ https://www.shellcheck.net/
 -Something happened when I was editing my script in the validator that threw everything off. for some reason, the script ran but wasn't showing all of the weather forecast. and couldn't even detect my city
 -so I created a diff file pretty much like the original one, and it worked just fine
 
+### 6.25.2021
+Lately, I've been working on tickets for Corey and trying to translate a bash script to javascript code. Calling weather forecast through sms utilizing Twilio. Taken awhile 
+but I can get a sense and idea how it translates to...out of what I DO know. Last night, I had a call with Corey about communicating as an engineers as well as the do's/don'ts when it 
+comes to working with others. I also found this and I'm going to finish this tomorrow or Sunday
+
+https://medium.com/@giuliano/build-a-weather-by-sms-service-with-twilio-and-nodejs-36826c903eb3
 

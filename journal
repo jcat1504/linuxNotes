@@ -64,3 +64,8 @@ https://medium.com/@giuliano/build-a-weather-by-sms-service-with-twilio-and-node
 I think I might have found the source for implementing weather script with JS code:
 https://medium.com/@giuliano/build-a-weather-by-sms-service-with-twilio-and-nodejs-36826c903eb3
 
+### 7.16.2021
+- Came up with a function that can not only send sms, but also catch weather api and send the body as a message
+- However, the weather results only pop up in the terminal, so I need to figure out a way to send this through sms and I am good 
+
+

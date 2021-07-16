@@ -84,3 +84,33 @@ function callWeather() {
 // then
 // lastUpdateTime=$(date +%s)
 // clear
+
+//actual code
+const twilio = require('twilio');
+require('dotenv').config();
+
+const accountSid = process.env.TWILIO_ACCOUNT_SID
+const authToken = process.env.TWILIO_AUTH_TOKEN
+
+const client = new Twilio(accountSid, authToken);
+
+let request = require('request');
+let city = 'long beach';
+let url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`
+
+function callWeather() {
+        request(url, function (err, response, body) {
+    if(err){
+        console.log('error:', error);
+    } else {
+        console.log('body:', body);
+    }
+    });
+}
+
+client.messages.create({
+    body: callWeather(),
+    to: '+19787264295',
+    from: '+14159431419'
+})
+.then((message) => console.log(message.sid));

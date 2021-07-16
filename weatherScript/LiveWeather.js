@@ -1,4 +1,4 @@
-const apiKey='2bd32d99c4cd58ac9dd3e047759c6b8f'
+const apiKey='xxxxxxxxxxxxxx'
 var defaultLocation="Anaheim"
 var dynamicUpdates=0
 var degreeCharacter="c"

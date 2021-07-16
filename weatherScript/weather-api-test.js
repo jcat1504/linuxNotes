@@ -93,3 +93,21 @@ function makeUrl(location, locationType) {
     return partialUri + "&appId=" + APP_ID;
 }
 
+//getWeather.ts
+import axios from 'axios';
+
+import { config } from '../../config/appConfig';
+import { parseWeatherDto } from './parseWeatherDto';
+
+function makeUrl(location, locationType) {
+    var BASE_URL = config.weather.api.baseUrl;
+    var APP_ID = config.weather.api.appId;
+    var partialUri = locationType === LocationType.ZIP
+        ? BASE_URL + "?zip=" + location
+        : BASE_URL + "?q=" + location;
+    // Full URL with query location and app ID.
+    return partialUri + "&appId=" + APP_ID;
+}
+
+
+//https://codeburst.io/build-a-simple-weather-app-with-node-js-in-just-16-lines-of-code-32261690901d

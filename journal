@@ -69,3 +69,13 @@ https://medium.com/@giuliano/build-a-weather-by-sms-service-with-twilio-and-node
 - However, the weather results only pop up in the terminal, so I need to figure out a way to send this through sms and I am good 
 
 
+### 7.17.2021
+- didn't do as much as I wanted to, but I solved a couple of things!
+I made the app a little more interactive. at first, I was only able to grab information on the weather in Long Beach, but now I made it so I can search up
+weather in a specified city. otherwise, my default input is long beach
+-a few complications. I realized my node was not updated enough to implement yargs. yargs is more of a pirate themed interactive tool on the cli - which has us
+declare variables from the command line. understandably, there are environment variables I can declare, but I needed to declare the object externally with js in order
+to make it work.
+-...then somehow, I wasn't able to work with yargs bc I needed to update node. so I tried, but my permission was denied and I had to install nvm..then somehow it hiccuped
+and my cache got cleared out. I had to install yargs, twilio and npm all over again but I am glad I caught that quick.
+

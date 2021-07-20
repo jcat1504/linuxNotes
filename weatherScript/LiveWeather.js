@@ -87,6 +87,7 @@ function callWeather() {
 
 //actual code
 const twilio = require('twilio');
+const argv = require('yargs').argv;
 require('dotenv').config();
 
 const accountSid = process.env.TWILIO_ACCOUNT_SID
@@ -95,10 +96,11 @@ const authToken = process.env.TWILIO_AUTH_TOKEN
 const client = new Twilio(accountSid, authToken);
 
 let request = require('request');
-let city = 'long beach';
-let url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`
+let city = argv.c || 'long beach';
+let url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${apiKey}`
 
 function callWeather() {
+    let weather = JSON.parse(body)
         request(url, function (err, response, body) {
     if(err){
         console.log('error:', error);

@@ -81,3 +81,6 @@ and my cache got cleared out. I had to install yargs, twilio and npm all over ag
 
 https://www.twilio.com/docs/sms/quickstart/node#receive-and-reply-to-inbound-sms-messages-with-express
 
+### 7.22.2021
+-had a little trouble installing ngrok but I'm sure I will figure it out
+

@@ -1,0 +1,26 @@
+## Fundamentals of System Design
+
+## SYSTEM DESIGN PRINCIPLES 
+**How do we architect a system that supports the functionality and requirements of system in the best way possible?**
+- Scalability: Handle additional load and will operate efficiently
+- Reliability: Perform function as expected, tolerate user mistakes, good for required use case, prevents unauthorized access/abuse
+- Availability: perform its functionality(uptime/total time). Availability does not imply reliability 
+- Efficiency: Perform functionality quickly. Latency, response time, bandwidth
+- Maintainability: easy to operate smoothly, simple to understand, easy to modify for cases
+
+**TRADEOFFS**: Helpful to understand how each component, algorithms, and architectural designs work.
+  - Works independently 
+  - Compares to other tools that perform similarily 
+ 
+ ## LOAD BALANCERS 
+ - Type of server that distributes incoming web traffic across multiple backend servers
+  - Allow applications to scale up or down with demand, achieve higher availability and efficiently utilize server capacity 
+  - Horizontal scaling: Add more servers to the system 
+    - When one or more servers can be used to serve a request, it becomes necessary to decide which server to send request to
+- Good load balancer will efficiently distribute incoming traffic to maximize the systems capacity utilization and minimize queueing time
+
+** Can distribute traffic**:
+- Round Robin: servers designed in repeating sequence, so that next server assigned is guaranteed to be least recently used 
+- Least Connections: Assigns the server currently handling the fewest number of requests 
+- Consistent Hashing: Similar to database sharding, server can be assigned consistently based on IP address or URL
+- engineers don't implement load balancers, they use industry standard reverse proxy

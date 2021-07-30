@@ -84,3 +84,5 @@ https://www.twilio.com/docs/sms/quickstart/node#receive-and-reply-to-inbound-sms
 ### 7.22.2021
 -had a little trouble installing ngrok but I'm sure I will figure it out
 
+### 7.30.2021
+-Submitted PR of recent API server files and readme, wrote up rough draft of blog post, studyed a little on system design

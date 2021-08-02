@@ -38,3 +38,15 @@
  - Data storage technique that plays a big role in designing scalable internet applications. Stores and retrieves data quickly for future use, 
  enabling faster response times and decreasing loads for other parts of system
  - reduce repeated calculations database queries or requests to other services serving more traffic volume
+ HOW IT WORKS:
+ - In memory application cache
+ - distributed in-memory cache
+ - database cache
+ - file system cache
+ 
+- Why not cache everything? well there are costs and accuracy to consider. 
+Caching policy: helps the cache free up space for the most relevant data that will be needed in the future
+  -FIFO
+  - Least recently used(LRU)
+  - Least frequently used(LFU)
+ 

@@ -24,3 +24,17 @@
 - Least Connections: Assigns the server currently handling the fewest number of requests 
 - Consistent Hashing: Similar to database sharding, server can be assigned consistently based on IP address or URL
 - engineers don't implement load balancers, they use industry standard reverse proxy
+
+**WHEN TO USE LOAD BALANCERS**: When you think the system you're designing would benefit from increased capacity/redundency 
+- Advantages: 
+  - Scalability: easy to scale up/down by adding/removing servers
+  - Reliability: Provide redundancy + minimize downtime by automatically detaching + replacing unhealthy servers
+- Considerations: 
+  - Bottlenecks: can be single point of failure 
+  - User session: some user requests can be served from different backends unless load balancer is configurered otherwise 
+  - Longer deploys: deploying ner server versions can take longer and require more machines
+ 
+ ### CACHE ###
+ - Data storage technique that plays a big role in designing scalable internet applications. Stores and retrieves data quickly for future use, 
+ enabling faster response times and decreasing loads for other parts of system
+ - reduce repeated calculations database queries or requests to other services serving more traffic volume

@@ -34,7 +34,7 @@
   - User session: some user requests can be served from different backends unless load balancer is configurered otherwise 
   - Longer deploys: deploying ner server versions can take longer and require more machines
  
- ### CACHE ###
+ ###CACHE
  - Data storage technique that plays a big role in designing scalable internet applications. Stores and retrieves data quickly for future use, 
  enabling faster response times and decreasing loads for other parts of system
  - reduce repeated calculations database queries or requests to other services serving more traffic volume
@@ -50,3 +50,13 @@ Caching policy: helps the cache free up space for the most relevant data that wi
   - Least recently used(LRU)
   - Least frequently used(LFU)
  
+ 
+ ##CONTENT DELIVERY NETWORKS(CDN)
+ - a modern and popular solution for minimizing request latency when fetching static assets from a server. An ideal CDN is compoased of a group of servers that are 
+ spread out globally, so that no matter how you are from your origin server, there is always a CDN server closeby.
+ -so instead of fetching static files from origin server, users can fetch cached copies from cdn more quickly
+ 
+**HOW DO CDNS WORK?** - Push and Pull CDNS
+- Push: responsibility of engineers to push new/updated files to the cdn, which would then propagate them to all of the cdn server caches
+- Pull : the server cache is lazily updated: when a user sends a static asset request to the cdn server and doesn't have it, it'll fetch the asset from the origin
+populate its cache with asset then send asset to the user.

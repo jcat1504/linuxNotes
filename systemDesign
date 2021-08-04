@@ -60,3 +60,21 @@ Caching policy: helps the cache free up space for the most relevant data that wi
 - Push: responsibility of engineers to push new/updated files to the cdn, which would then propagate them to all of the cdn server caches
 - Pull : the server cache is lazily updated: when a user sends a static asset request to the cdn server and doesn't have it, it'll fetch the asset from the origin
 populate its cache with asset then send asset to the user.
+
+##SQL VS NOSQL
+SQL:
+- Relationships: relational databases, allows easy querying on relationships between data among multiple tables. They are defined using primary and foreign key columns.
+Table relationships are important for organizing and structuring a lot of different data
+-Powerful for fetching data
+- Structured Data: data is structured using schemas that define the columns and tables in a database. 
+- Acid: (Atomicity, Consistency, Isolation, Durability) compliant, and they ensure that by supporting transactions. 
+*CONS*
+-Take up more time to set up compared to nosql database. they are not effective for storying and querying unstructured data
+- Difficult to scale horizontally. 
+
+NoSQL:
+- do not support table relationships and data usually stored in documents or as key-value pairs. so it is a bit more flexible and simpler to set up
+- without table relationships, nosql database can be sharded across different data stores, allowing for distributed databases. this makes horizontal scaling much easier
+and very large amounts of data can be stored without having to purchase a single, expensive server. hashing and consistent hashing are very important techniques
+for determining which shard(s) to route application queries to. 
+

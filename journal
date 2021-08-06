@@ -98,4 +98,9 @@ not plugged in the correct route because it's refusing to get me a stable connec
 https://www.twilio.com/docs/sms/api/message-resource
 
 
+##8.6.2021
+-Successful GET request. List all messages organized by date on Postman
+-Turned off both global proxy config and system proxy
+https://stackoverflow.com/questions/44945663/postman-error-tunneling-socket-could-not-be-established-statuscode-407
+
 

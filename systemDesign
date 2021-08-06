@@ -78,3 +78,51 @@ NoSQL:
 and very large amounts of data can be stored without having to purchase a single, expensive server. hashing and consistent hashing are very important techniques
 for determining which shard(s) to route application queries to. 
 
+
+##CAP THEOREM
+CAP: Consistency, Availability, Partition tolerance
+- A network partition is a temporary network failure between nodes. This means being able to keep the nodes in a distributed database running even when there are network partitions
+This means that in a distributed db, you ensure consistency or availability in case of a network partition
+
+CONSISTENCY
+- In a scenario where there is a network partition, any write requests between node a and b would be rejected
+this is to ensure that both nodes remain the same
+
+AVAILABILITY
+-in a db that prioritizes availability, its ok to have inconsistent data between nodes as long as we prioritize the ones that successfully complete requests sent to them
+-available db also tend to have eventual consistency, eventually all nodes will sync when network partition is resolved
+
+When should Consistency or Availability be prioritized?
+- If working with data that needs to be up to date: prioritize CONSISTENCY
+- If its ok for queried data to be out of date: AVAILABILITY 
+
+-in the real world, when we talk about databases that prioritize consistency, we usually refer to db that are eventually consistent with very short noticeable lag time b/t nodes
+
+##DATABASE SHARDING
+- Process of breaking up large tables into horizontal data partitions, each of which contains a subset of the whole table and
+putting up each partition on a separate db server
+- this is because as data size increases, traditional database systems run into bottlenecks on cpu, memory or disk usage
+
+SHARDING TECHNIQUES
+-Geo based sharding: data is partitioned to a static location chosen, such as user's location when their acct was created
+this is to reduce latency 
+-Range based sharding: divides data based on ranges of key value, like choosing first letter of user's name
+it is simple but can lead to uneven splits across data partitions
+-Hash based: data based on key value then using hash val to compute partition. a good hash algo will distribute data evenly across partitions
+but it is likely to assign related rows to diff partitions, so server can't enhance performance by trying to predict/pre-load future queries
+
+ADVANTAGES OF SHARDING
+-Sharding allows a system to scale out as the size of data increases. It allows the application to deal with a larger amount of data than can be done using a traditional RDBMS.
+-Having a smaller set of data in each shard also means that the indexes on that data are smaller, which result in faster query performance.
+-If an unplanned outage takes down a shard, the majority of the system remains accessible while that shard is restored. Downtime doesn’t take out the whole system.
+-Smaller amounts of data in each shard mean that the nodes can run on commodity hardware, and do not require expensive high-end hardware to deliver an acceptable performance.
+
+DISADVANTAGES
+-Not all data is amenable to sharding.
+-Foreign key relationships can only be maintained within a single shard.
+-Manual sharding can be very complex and can lead to hotspots.
+-Because each shard runs on a separate database server, some types of cross-shard queries (such as table joins) are either very expensive, or not possible.
+-Once sharding has been set up, it is very hard (if not impossible) on some systems to undo sharding or to change the shard key.
+-Each shard is a live production database server, so needs to ensure high-availability (via replication or other techniques). This increases the operational cost compared to a single RDBMS.
+
+

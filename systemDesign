@@ -125,4 +125,22 @@ DISADVANTAGES
 -Once sharding has been set up, it is very hard (if not impossible) on some systems to undo sharding or to change the shard key.
 -Each shard is a live production database server, so needs to ensure high-availability (via replication or other techniques). This increases the operational cost compared to a single RDBMS.
 
+##How Do Computers Handle Memory Management?
+- Memory management deals with how the system allocates and frees up memory during the execution of a program
+- most older programming languages(C or C++) dont have any kind of automatic memory management
+- Stack and Heap 
+-Management on stack is automatic on all platforms
+- A critical requirement for managing memory effectively is that each allocation be matched by exactly one de-allocation
+
+
+**GARBAGE COLLECTION**
+-When the system detects that a program is running low on memory, it pauses execution of the program and runs a Garbage Collector (GC).
+1. Marks all the in use memory thats reachable from current program state
+2. compacts the heap by moving all reachable memory into the beginning of the heap and updates references to the new locations
+3. releases unreachable memory
+
+ **Automatic Reference Counting (ARC)**
+ -An alternative approach is to maintain a reference count to each piece of allocated memory, and update it as the program executes
+
+
 

@@ -103,4 +103,8 @@ https://www.twilio.com/docs/sms/api/message-resource
 -Turned off both global proxy config and system proxy
 https://stackoverflow.com/questions/44945663/postman-error-tunneling-socket-could-not-be-established-statuscode-407
 
-
+8.10.2021
+Thought process:
+I will want to create an environment to make requests in and create a environment variable called message. Then make first request to the 
+weather API then use the Postman scripting after to set the message environment variable based on the response from the API. Finally set up the second
+request to Twilio and set the value for the "Body" parameter to be {{message}} environment variable.

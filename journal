@@ -108,3 +108,6 @@ Thought process:
 I will want to create an environment to make requests in and create a environment variable called message. Then make first request to the 
 weather API then use the Postman scripting after to set the message environment variable based on the response from the API. Finally set up the second
 request to Twilio and set the value for the "Body" parameter to be {{message}} environment variable.
+
+8.11.2021
+One step closer to the solution - I am able to extract json data from api but don't know how to set that as an environment variable yet.

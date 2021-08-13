@@ -117,3 +117,20 @@ One step closer to the solution - I am able to extract json data from api but do
 did some pair programming with corey. did some research on nginx, web servers and of the like.
 https://learning.postman.com/docs/sending-requests/managing-environments/
 https://learning.postman.com/docs/writing-scripts/script-references/postman-sandbox-api-reference/#sending-requests-from-scripts
+
+
+8.13.2021
+https://docs.digitalocean.com/products/droplets/how-to/create/
+- droplets are linux based virtual machines that run on top of virtualized hardware
+-basic droplets are good enough for web hosting, staging environments and low intensity compute needs.
+
+https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-20-04
+INITIAL SERVER SETUP WITH UBUNTU
+1. logging in as root
+- remember to create ssh key(https://docs.digitalocean.com/products/droplets/how-to/add-ssh-keys/)
+- connect droplets with SSH(https://docs.digitalocean.com/products/droplets/how-to/connect-with-ssh/)
+2. creating a new user
+3. granting administrative privileges
+4 set up basic firewall
+5. enabling external access for your regular user
+

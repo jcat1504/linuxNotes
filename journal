@@ -111,3 +111,9 @@ request to Twilio and set the value for the "Body" parameter to be {{message}} e
 
 8.11.2021
 One step closer to the solution - I am able to extract json data from api but don't know how to set that as an environment variable yet.
+
+
+8.12.2021
+did some pair programming with corey. did some research on nginx, web servers and of the like.
+https://learning.postman.com/docs/sending-requests/managing-environments/
+https://learning.postman.com/docs/writing-scripts/script-references/postman-sandbox-api-reference/#sending-requests-from-scripts

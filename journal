@@ -134,3 +134,7 @@ INITIAL SERVER SETUP WITH UBUNTU
 4 set up basic firewall
 5. enabling external access for your regular user
 
+
+8.16.2021
+I am able to extract and parse JSON data, and console.log the response body but still don't know how to save and use it as an environment variable. I know how
+to do it for my API, and other factors, but not the whole weather just yet.

@@ -138,3 +138,14 @@ INITIAL SERVER SETUP WITH UBUNTU
 8.16.2021
 I am able to extract and parse JSON data, and console.log the response body but still don't know how to save and use it as an environment variable. I know how
 to do it for my API, and other factors, but not the whole weather just yet.
+
+8.17.2021
+CREATE POST REQUEST - edited routes in get request to proper environment variables
+- in tests: extracted data from api and parsed it into environment variable called responseBody
+  - weather forecast stored in env variable and I console.log everything
+  -then in body(form) I use postman scripting to call weather in env variable
+  after... I create post request to twilio. in body(form) I add in {{responseBody}} which is weather data and sending the req will go to my mobile
+  
+  -the thing I had most trouble with is extracting data and setting it as env variable through postman
+  -it was properly parsing the responsebody and setting it as a variable. then learning to put that in the response body in postman
+  i thought it'd be more complicated with code but it was getting accustomed to tools.

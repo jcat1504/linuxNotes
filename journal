@@ -149,3 +149,8 @@ CREATE POST REQUEST - edited routes in get request to proper environment variabl
   -the thing I had most trouble with is extracting data and setting it as env variable through postman
   -it was properly parsing the responsebody and setting it as a variable. then learning to put that in the response body in postman
   i thought it'd be more complicated with code but it was getting accustomed to tools.
+
+8.18.2021
+studied more on system design - cdns sharding-, cap theorem
+
+

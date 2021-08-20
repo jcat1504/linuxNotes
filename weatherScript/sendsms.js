@@ -6,7 +6,7 @@ const authToken = process.env.TWILIO_AUTH_TOKEN;
 
 const client = new twilio(accountSid, authToken);
 
-const apiKey='2bd32d99c4cd58ac9dd3e047759c6b8f';
+const apiKey='xxxxxxxxxxxxxxxxx';
 const request = require('request');
 const argv = require('yargs').argv;
 let city = argv.c || 'long beach';

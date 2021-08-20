@@ -71,3 +71,8 @@ http.createServer(app).listen(3000, () => {
   console.log('Express server listening on port 3000');
 });
 
+
+var jsonData = JSON.parse(responseBody);
+postman.setEnvironmentVariable("responseBody", jsonData.responseBody);
+pm.environment.set("responseBody", responseBody);
+console.log("the weather forecast:", responseBody)

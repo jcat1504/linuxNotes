@@ -153,4 +153,7 @@ CREATE POST REQUEST - edited routes in get request to proper environment variabl
 8.18.2021
 studied more on system design - cdns sharding-, cap theorem
 
+8.20.2021
+created a droplet on DO, and added in my public key with the droplet. but for some reason its not letting me access it via putty even though I checked it publickey was connected
+https://www.digitalocean.com/community/questions/can-not-ssh-to-my-newly-created-droplet
 

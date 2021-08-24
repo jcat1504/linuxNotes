@@ -157,3 +157,9 @@ studied more on system design - cdns sharding-, cap theorem
 created a droplet on DO, and added in my public key with the droplet. but for some reason its not letting me access it via putty even though I checked it publickey was connected
 https://www.digitalocean.com/community/questions/can-not-ssh-to-my-newly-created-droplet
 
+8.23.2021
+-I guess I needed to restart the server for it to work? cause now my ssh keys are working and I am able to log in now.
+https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-20-04
+https://linuxize.com/post/how-to-setup-a-firewall-with-ufw-on-ubuntu-18-04/
+
+everything is all set up and ready to go!

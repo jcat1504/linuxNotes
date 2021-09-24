@@ -188,3 +188,10 @@ https://stackoverflow.com/questions/44607396/importing-multiple-files-in-react
 9.23
 Updated firestore db
 
+9.24
+Updated firestore db 
+Added proper images/id to each collection item
+Created contact form, routed contact form and made it similar to sign-in component
+
+
+
